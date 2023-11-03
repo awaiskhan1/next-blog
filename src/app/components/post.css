@@ -1,0 +1,71 @@
+.ariva_blogpostinnertop {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ariva_blogpostinnertext {
+    display: flex;
+    align-items: center;
+}
+
+.ariva_blogextline {
+    width: 20px;
+    height: 1px;
+    background-color: #222;
+}
+
+.ariva_blogpostinner {
+    padding: 1.5rem;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.ariva_blogcat {
+    position: relative;
+    font-weight: 600;
+}
+
+.ariva_blogcat a {
+    color: #1e40af;
+    transition: color 0.3s ease;
+}
+
+.ariva_blogcat a:hover {
+    color: #1a365d;
+}
+
+.ariva_blogcat:before {
+    content: '';
+    width: 6px;
+    height: 1px;
+    background-color: #222;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+.ariva_entryheader h2 a {
+    color: #222;
+    transition: color 0.3s ease;
+}
+
+.ariva_entryheader h2 a:hover {
+    color: #1e40af;
+}
+
+.ariva_achentryreadmore {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #222;
+    border: 2px solid #222;
+    transition: all 0.3s ease;
+}
+
+.ariva_achentryreadmore:hover {
+    color: #1e40af;
+    border-color: #1e40af;
+}
