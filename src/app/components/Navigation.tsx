@@ -3,12 +3,13 @@ import Link from "next/link"
 
 const Navigation = () => {
   return (
-    <header id="navbar-sticky" className="navbar bg-slate-900">
-        <div className="container">
+    <header id="navbar-sticky" className="navbar ">
+        <div className="container flex items-stretch">
             <nav className="w-full">
-                <a href="index-5.html" className="logo">
-                    <Image src="/assets/images/logo/logo-no-background.png" height={10} width={100} className="h-10" alt="Logo" />
-                </a>
+                <Link href="/" className="logo">
+                    <Image src="/assets/images/logo/logo-no-background.png" width={150} height={0} className=""
+  style={{ width: 'auto', height: 'auto' }}  alt="Logo" />
+                </Link>
 
                 <div className="lg:hidden flex items-center ms-auto px-2.5">
                     <button className="hs-collapse-toggle inline-flex items-center justify-center h-9 w-12 rounded-md border border-white/20 bg-default-100/5" type="button" id="hs-unstyled-collapse" data-hs-collapse="#mobileMenu" data-hs-type="collapse">

@@ -7,9 +7,11 @@
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
 
-  --tw-shadow: 0 0 #0000;
-  --tw-shadow-colored: 0 0 #0000;
+  --tw-shadow: 0, 0, #0000;
+  --tw-shadow-colored: 0, 0, #0000;
   --tw-text-opacity: 1;
+  --tw-shadow: 0, 20px, 25px, -5px, rgb(0, 0, 0 / 0.1),0, 8px, 10px, -6px, rgb(0, 0, 0 / 0.1);
+  --tw-shadow-colored: 0, 20px, 25px, -5px, var(--tw-shadow-color),0, 8px, 10px, -6px, var(--tw-shadow-color);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -22,7 +24,8 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background-color: rgb(15 23 42 / 1);
+  background-color: rgba(15, 23, 42 / 1, 0.8);
+  min-height: 100vh;
 }
 
 
@@ -62,10 +65,8 @@ section {
   display: block;
   width: 100%;
   overflow: hidden;
-  background-color: rgb(2 6 23 / .6);
-  --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1),0 8px 10px -6px rgb(0 0 0 / 0.1);
-  --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color),0 8px 10px -6px var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow);
+  background-color: rgb(2, 6, 23 / .6);
+  box-shadow: var(--tw-ring-offset-shadow,0, 0, #0000),var(--tw-ring-shadow,0, 0, #0000),var(--tw-shadow);
   --tw-backdrop-blur: blur(40px);
   -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
   backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
@@ -88,7 +89,7 @@ section {
 
 @media (min-width: 1024px) {
   .navbar {
-      box-shadow: var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow)
+      box-shadow: var(--tw-ring-offset-shadow,0, 0, #0000),var(--tw-ring-shadow,0, 0, #0000),var(--tw-shadow)
   }
 
   .navbar nav {
@@ -126,7 +127,7 @@ section {
   text-transform: capitalize;
   letter-spacing: .025em;
   
-  color: rgb(241 245 249 / var(--tw-text-opacity));
+  color: rgb(241, 245, 249 / var(--tw-text-opacity));
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4,0,0.2,1);
   transition-duration: .3s
@@ -154,7 +155,7 @@ section {
   }
 
   .navbar nav .navbar-nav .nav-item .nav-link {
-      color: rgb(255 255 255 / var(--tw-text-opacity))
+      color: rgb(255, 255, 255 / var(--tw-text-opacity))
   }
 }
 

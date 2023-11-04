@@ -4,8 +4,8 @@ const HomeBanner = () => {
   return (
     <section id="home">
         <div className="container-fluid lg:px-10 md:px-3 relative overflow-hidden">
-            <div className="lg:py-24 py-[74px] md:rounded-lg shadow bg-default-950/40 backdrop-brightness-50 bg-back/30">
-                <div className="container relative">
+            <div className="container relative md:rounded-lg shadow backdrop-brightness-50 bg-back/30">
+                <div className="lg:py-24 py-[74px]">
                     <div className="absolute top-0">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="badge" className="lucide lucide-badge animate-[spin_10s_linear_infinite] h-12 w-12 fill-primary/20 text-transparent"><path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z"></path></svg>
                     </div>
