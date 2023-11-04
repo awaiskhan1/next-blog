@@ -1,7 +1,10 @@
-import Image from 'next/image'
+import HomeBanner from './components/HomeBanner'
+import Navigation from './components/Navigation'
 
 export default function Home() {
   return (
-    <h1>Main Page</h1>
+    <>
+      <HomeBanner />
+    </>
   )
 }
