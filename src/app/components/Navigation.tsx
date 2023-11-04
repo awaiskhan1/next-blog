@@ -3,11 +3,11 @@ import Link from "next/link"
 
 const Navigation = () => {
   return (
-    <header id="navbar-sticky" className="navbar">
+    <header id="navbar-sticky" className="navbar bg-slate-900">
         <div className="container">
             <nav className="w-full">
                 <a href="index-5.html" className="logo">
-                    <Image src="/assets/images/logo/logo-white.png" height={10} width={100} className="h-10" alt="Logo" />
+                    <Image src="/assets/images/logo/logo-no-background.png" height={10} width={100} className="h-10" alt="Logo" />
                 </a>
 
                 <div className="lg:hidden flex items-center ms-auto px-2.5">

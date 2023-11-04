@@ -6,6 +6,10 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+
+  --tw-shadow: 0 0 #0000;
+  --tw-shadow-colored: 0 0 #0000;
+  --tw-text-opacity: 1;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -84,9 +88,6 @@ section {
 
 @media (min-width: 1024px) {
   .navbar {
-      background-color:transparent;
-      --tw-shadow: 0 0 #0000;
-      --tw-shadow-colored: 0 0 #0000;
       box-shadow: var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow)
   }
 
@@ -124,7 +125,7 @@ section {
   font-weight: 600;
   text-transform: capitalize;
   letter-spacing: .025em;
-  --tw-text-opacity: 1;
+  
   color: rgb(241 245 249 / var(--tw-text-opacity));
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4,0,0.2,1);
@@ -153,7 +154,6 @@ section {
   }
 
   .navbar nav .navbar-nav .nav-item .nav-link {
-      --tw-text-opacity: 1;
       color: rgb(255 255 255 / var(--tw-text-opacity))
   }
 }
